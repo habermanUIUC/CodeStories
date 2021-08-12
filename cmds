@@ -7,7 +7,7 @@
 git remote -v
 
 
-work flow
+lesson work flow
 
 git add .
 pre_commit.sh
