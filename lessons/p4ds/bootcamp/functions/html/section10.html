@@ -17,11 +17,8 @@
     }, 200);
     </script>
 </head><body class="lesson"><div class="main-content lesson bg-gray-200 text-black p-1 pl-3 font-serif"><div class="md-inner">
-<div id="start" class="section">&nbsp;</div><h1 class="section" id="section4">To the point of no <code>return</code>s </h1><p class="new">In Python every function returns a value. If you use the keyword <code>return</code> it's 
-called an <em>explicit</em> return. However, functions in Python still return a value 
-even if there isn't the keyword <code>return</code>. If a function doesn't return a value, 
-it's sometimes called a <em>procedure</em> or <em>subroutine</em> (depending upon who's in the room) 
-but in Python every function returns a value.  </p><p class="new">What value is returned if there is no <code>return</code> statement?</p><p class="new">Type in the following:</p><pre><code>def bad_add(a,b):
-    a + b
-
-print(bad_add(2,3))</code></pre><p class="new">What happens after you run this code?</p></div></div></body></html>
+<div id="start" class="section">&nbsp;</div><blockquote><p class="new">if nothing happens after hitting run, read this lesson from the beginning and 
+follow all the directions.</p></blockquote><h3 id="extra-output">Extra Output?</h3><p class="new">You may have noticed an extra item being printed:
+<img alt="my_loggerOutput.png" class="center border2" src="https://raw.githubusercontent.com/habermanUIUC/CodeStories-lessons/main/lessons/p4ds/bootcamp/functions/html/my_loggerOutput.png"/>Colab will print the result of the last line executed in a cell.  In this
+ case, since my_logger always returns <code>True</code>, that value is printed.</p><h2 id="conjunction-junction-whats-your-function-">Conjunction Junction, what's your function? </h2><p class="new">In the next code cell, add the following code. Try to figure out what
+ will be printed before running it:</p><pre><code>my_logger(my_logger("World!"))</code></pre></div></div></body></html>

@@ -17,7 +17,11 @@
     }, 200);
     </script>
 </head><body class="lesson"><div class="main-content lesson bg-gray-200 text-black p-1 pl-3 font-serif"><div class="md-inner">
-<div id="start" class="section">&nbsp;</div><div class="ide code-starter clearfix"><pre><code>def add(a, b):    
-    return a + b
-    print("adding", a, b)
-    return 100</code></pre></div></div></div></body></html>
+<div id="start" class="section">&nbsp;</div><h1 class="section" id="section5">To the point of no <code>return</code>s </h1><p class="new">In Python every function returns a value. If you use the keyword <code>return</code> it's 
+called an <em>explicit</em> return. However, functions in Python still return a value 
+even if there isn't the keyword <code>return</code>. If a function doesn't return a value, 
+it's sometimes called a <em>procedure</em> or <em>subroutine</em> (depending upon who's in the room) 
+but in Python every function returns a value.  </p><p class="new">What value is returned if there is no <code>return</code> statement?</p><p class="new">Type in the following:</p><pre><code>def bad_add(a,b):
+    a + b
+
+print(bad_add(2,3))</code></pre><p class="new">What happens after you run this code?</p></div></div></body></html>

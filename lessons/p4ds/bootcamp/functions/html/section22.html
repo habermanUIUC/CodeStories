@@ -17,4 +17,17 @@
     }, 200);
     </script>
 </head><body class="lesson"><div class="main-content lesson bg-gray-200 text-black p-1 pl-3 font-serif"><div class="md-inner">
-<div id="start" class="section">&nbsp;</div><div class="ide code-starter clearfix"><pre><code></code></pre></div></div></div></body></html>
+<div id="start" class="section">&nbsp;</div><p class="new">The result of calling <code>add(1,2)</code> is being passed as an argument to the <code>print</code> function. 
+The Python interpreter will first evaluate <code>add(1,2)</code> to produce <code>3</code>. Then this 
+value will be used as the second argument to the function <code>print</code>.  We can make 
+use of this idea by passing the result of <code>add(1,2)</code> into another call of <code>add</code>:</p><pre><code>print("1+2+3=", add(1, add(2,3)))</code></pre><blockquote><p class="new">you should always type each line, guess it's output, and then run the code.</p></blockquote><p class="new">Let's review what is happening: </p><ul><li><code>add(2,3)</code> is evaluated (which returns a <code>5</code>)</li><li>that result is then passed to another invocation of <code>add</code></li><li>the first <code>add</code> will be called with the arguments of <code>1</code> and <code>5</code>.</li></ul><h2 id="parameter-evaluation-order">Parameter Evaluation Order</h2><p class="new">By adding a <code>print</code> statement in our <code>add</code> function we can reveal how Python 
+evaluates the arguments. </p><pre><code>def add(a,b):
+  print(a, b)
+  return a+b
+
+print(add(1,2), add(9,10))</code></pre><p class="new">Be sure you understand what you see when you run this code. Python will 
+evaluate the arguments to a function from left to right.  </p><blockquote><p class="new"><strong><em>Coder's Log</em></strong> when Python sees <code>print(add(1, add(2,3)))</code> it processes it
+left-to-right. However, it can't finish printing until its arguments
+are evaluated. The first argument can't be evaluated until the second
+argument gets evaluated.  So <code>add(2,3)</code> is the first expression that gets
+resolved first.</p></blockquote></div></div></body></html>

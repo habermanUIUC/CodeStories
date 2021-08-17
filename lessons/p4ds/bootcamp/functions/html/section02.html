@@ -17,26 +17,4 @@
     }, 200);
     </script>
 </head><body class="lesson"><div class="main-content lesson bg-gray-200 text-black p-1 pl-3 font-serif"><div class="md-inner">
-<div id="start" class="section">&nbsp;</div><h1 class="section" id="section2">Creating Your Own Functions</h1><p class="new">Almost everything we will do in Python (for this class) will result in 
-creating a function that performs some action. Creating a Python function 
-looks like the following:
-</p><div class="code-block code clearfix"><pre><code class="line-number">def my_logger(msg):
-</code><code class="line-number">    print(msg)
-</code><code class="line-number">    return True
-</code></pre></div><p class="new">There's a lot to unpack in those 3 lines:</p><h4 id="def"><code>def</code></h4><p class="new"><code>def</code> is a keyword in Python. Programming language keywords are reserved for
- specific use. In Python the keyword <code>def</code> marks the definition of a function. </p><h4 id="mylogger"><code>my_logger</code></h4><p class="new"><code>my_logger</code> is the name given to the function. Function names must begin with
- a letter (or an underscore) and contain no spaces. Python is also case sensitive. 
- So <code>my_logger</code> and <code>my_Logger</code> are two different functions.</p><h4 id="-is-the-start-"><code>(</code> is the start </h4><p class="new">of the parameter(s) list. The parameters are also called <em>formal parameters</em></p><h4 id="msg"><code>msg</code></h4><p class="new"><code>msg</code> is the name of the formal parameter. It represents the INPUT to the function. 
-The parameter <code>msg</code> belongs only to <code>my_logger</code>. Only <code>my_logger</code> can "see" the 
-parameter <code>msg</code>. That is, other functions could not access the value of <code>msg</code>.</p><h4 id="-marks-the-end-"><code>)</code> marks the end </h4><p class="new">of the parameter list. </p><h4 id="-marks-the-beginning-of-the-function-declaration"><code>:</code> marks the beginning of the function declaration</h4><h4 id="code-body">(code body)</h4><p class="new">the <em>body</em> (statements, code) of the function starts on line 2 and ends after line 3. 
-These lines define the function. In this example there are only 2 lines of 
-code (lines 2 and 3) in the body. The code on line 2 just passes the 
-parameter <code>msg</code> to the global Python <code>print</code> function.</p><h4 id="return"><code>return</code></h4><p class="new"><code>return</code> is a keyword that marks an explicit exit from the function. 
-Functions in Python can have multiple exit points (although we strive to have 
-one exit point). Even if a function has multiple return statements <strong>only ONE</strong> will be executed.</p><h4 id="return-true">return <code>True</code></h4><p class="new"><code>True</code> is the value returned by <code>my_logger</code>. This represents the OUTPUT of 
-the function. We will discuss the meaning of <code>True</code> (and it's counterpart <code>False</code>) 
-in the chapter on values.</p><p class="new">In the next code cell, define the same function <code>my_logger</code>.  We will use it
- very shortly.  After defining the function, and hit the play 
- <img alt="play1.png" class="inline-block" src="https://raw.githubusercontent.com/habermanUIUC/CodeStories-lessons/main/lessons/p4ds/bootcamp/functions/html/play1.png"/> button. Since we
-  only defined the function, nothing should happen:</p><p class="new">If something does go wrong, it's most likely a syntax error: Meaning the code
- you typed is not valid Python:</p><img alt="syntaxError.png" class="center" src="https://raw.githubusercontent.com/habermanUIUC/CodeStories-lessons/main/lessons/p4ds/bootcamp/functions/html/syntaxError.png"/></div></div></body></html>
+<div id="start" class="section">&nbsp;</div><div class="ide code-starter clearfix"><pre><code>print("Welcome to Python")</code></pre></div></div></div></body></html>

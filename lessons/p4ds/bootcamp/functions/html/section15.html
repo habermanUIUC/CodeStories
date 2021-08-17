@@ -17,4 +17,24 @@
     }, 200);
     </script>
 </head><body class="lesson"><div class="main-content lesson bg-gray-200 text-black p-1 pl-3 font-serif"><div class="md-inner">
-<div id="start" class="section">&nbsp;</div><div class="ide code-starter clearfix"><pre><code></code></pre></div></div></div></body></html>
+<div id="start" class="section">&nbsp;</div><p class="new">If you don't specify a return, Python returns the value 'None'. This "keyword" 
+indicates an absence of a value. Some languages use the keyword <code>null</code> or <code>undefined</code>. 
+We will learn more about <code>None</code> and how it is used later. The values <code>True</code>, 
+<code>False</code>, and <code>None</code> are also keywords in Python.</p><h2 id="fun-with-math">Fun with math.</h2><p class="new">Math and functions work well together. Let's review the following code:</p><div class="code-block code clearfix"><pre><code class="line-number"># return the sum of the parameters
+</code><code class="line-number">def add(a, b): 
+</code><code class="line-number">    return a + b
+</code></pre></div><h4 id="line-01">line 01</h4><p class="new">The # on the first line is ignored by the interpreter.  As mentioned before, we use 
+the <code>#</code> symbol to add notes to the reader of our code (called comments). Comments 
+in Python start with <code>#</code> and anything after the <code>#</code> is ignored up until the 
+next line is encountered. We try to add comments to help explain the logic or 
+the reasoning behind the code.</p><h4 id="line-02">line 02</h4><p class="new">On the second line, we are declaring a function with the name <code>add</code>. It has 
+two formal parameters (<code>a</code> and <code>b</code>) also called <em>positional</em> arguments.  Only 
+the function add can use the labels <code>a</code> and <code>b</code> to access the two values 
+passed into it. In this example, <code>a</code> and <code>b</code> are only "visible" inside the 
+function <code>add</code>. Since the <code>add</code> function has multiple parameters (<code>a</code> and <code>b</code>), 
+each parameter is separated by a comma.</p><h4 id="line-03">line 03</h4><p class="new">The third line represents the entire definition of the function. It simply returns 
+the resulting value of adding the two parameters (it will be the OUTPUT of the <code>add</code>
+ function since we <code>return</code> that value):</p><pre><code>    return a + b</code></pre><h2 id="no-returns-a-reprise">No Returns, a reprise</h2><p class="new">Once a function returns or once Python encounters a <code>return</code>, any code after 
+that return is considered <em>dead code</em> (or unreachable code). It simply will
+ never be run.</p><p class="new">Let's repeat that:  <em>any</em> code after a <code>return</code> will <strong><em>never</em></strong> be run. That
+ is a useful tip to file away.</p></div></div></body></html>
